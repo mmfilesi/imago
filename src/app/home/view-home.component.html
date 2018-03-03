@@ -1,0 +1,14 @@
+<div>
+  <app-slider></app-slider>
+</div>
+<div>
+  <h5 class="title-secondary">Cuadernos</h5>
+  <div class="albums-container">
+    <app-thumbnail
+    *ngFor="let album of albumsLayout; let i = index; trackBy: trackByAlbumId"
+    (click)="goAlbum(album.id)"
+    [thumbnail]="album"
+    class="albums-thumbnail"
+    ></app-thumbnail>
+  </div>
+</div>

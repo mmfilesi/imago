@@ -1,0 +1,23 @@
+<article class="slider">
+  <div class="slider-container elevation-01">
+    <div
+      *ngFor="let item of itemsSlider; let i = index; trackBy: idImage"
+      class="slider-item img-background"
+      [ngClass]="{'slider-item--active': isActive === i, 'slider-item--inactive': isActive !== i}"
+      [style.backgroundImage]="'url('+ item.img +')'"
+      >
+      <aside
+        class="slider-description"
+        [ngClass]="{'slider-description--active': isActive === i, 'slider-description--inactive': isActive !== i}"
+      >
+        <span>Nombre álbum</span>
+      </aside>
+    </div>
+  </div>
+  <div class="balls-container">
+    <div *ngFor="let item of itemsSlider; let i = index; trackBy: idImage"
+    class="balls-item elevation-01"
+    [ngClass]="{'balls-item--active': isActive === i}"
+    ></div>
+  </div>
+</article>

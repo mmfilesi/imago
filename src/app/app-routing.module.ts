@@ -8,3 +8,10 @@ const routes: Routes = [];
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+/*
+https://blog.ng-classroom.com/blog/tips/data-sharing-in-multi-view/
+*/
+
+// https://codecraft.tv/courses/angular/http/core-http-api/
+// https://angular.io/guide/displaying-data

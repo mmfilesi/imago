@@ -1,0 +1,15 @@
+<div
+  class="thumbnail-container img-background"
+  [style.width]="width"
+  [style.backgroundImage]="'url('+ thumbnail.img +')'"
+>
+  <aside
+    *ngIf="thumbnail.name"
+    class="thumbnail-info"
+    (mouseenter)="showDescription=true"
+    (mouseleave)="showDescription=false"
+    >
+      <h5 class="thumbnail-title">{{ thumbnail.name }}</h5>
+      <p class="thumbnail-description" *ngIf="showDescription">{{ thumbnail.description }}</p>
+  </aside>
+</div>

@@ -1,0 +1,50 @@
+{
+  "mainData": {
+    "title": "Lore ipsum"
+  },
+  "pages": [],
+  "list": [
+    {
+      "id": "1",
+      "name": "Países Bálticos",
+      "date": "06-2017",
+      "img": "./assets/images/image-01.jpg",
+      "description": "Lore Ipsum"
+    },
+    {
+      "id": "2",
+      "name": "Galicia",
+      "date": "06-2016",
+      "img": "./assets/images/image-02.jpg",
+      "description": "Lore Ipsum"
+    },
+    {
+      "id": "3",
+      "name": "New York",
+      "date": "06-2016",
+      "img": "./assets/images/image-03.jpg",
+      "description": "Lore Ipsum"
+    },
+    {
+      "id": "4",
+      "name": "Países Bálticos",
+      "date": "06-2017",
+      "img": "./assets/images/image-01.jpg",
+      "description": "Lore Ipsum"
+    },
+    {
+      "id": "5",
+      "name": "Galicia",
+      "date": "06-2016",
+      "img": "./assets/images/image-02.jpg",
+      "description": "Lore Ipsum"
+    },
+    {
+      "id": "6",
+      "name": "New York",
+      "date": "06-2016",
+      "img": "./assets/images/image-03.jpg",
+      "description": "Lore Ipsum"
+    }
+  ]
+}

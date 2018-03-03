@@ -1,0 +1,22 @@
+// Size
+$baseText: 16px; // The base text size that affects all the elements sizes
+$sizeInput: 1.25rem; // The size of the form elements (inputs, selects, etc)
+$desktopWidth: 1180px; // The width for the desktop version
+$inputWidth: 12em;
+$headerMinHeight: 3.7rem;
+
+// Z-Indexes
+$z-zero: 0;
+$z-one: 1;
+$z-two: 2;
+$z-three: 3;
+$z-dropdown: 20;
+$z-header: 30;
+$z-float: 34;
+$z-holdings: 35;
+$z-modal: 40;
+$z-ontop: 44;
+$z-tooltip: 45;
+$z-notification: 50;
+$z-nav: 60;
+$z-preload: 70;
