@@ -41,11 +41,11 @@ export class ViewHomeComponent implements OnInit, OnDestroy {
     });
   }
 
-  goAlbum(idAlbum) {
-    this.router.navigate(['album', idAlbum]);
+  goAlbum(album: ThumbnailSchema) {
+    this.router.navigate(['album', album.slug]);
   }
 
   trackByAlbumId(index: number, album: ThumbnailSchema): string {
-    return album.id;
+    return album.slug;
   }
 }

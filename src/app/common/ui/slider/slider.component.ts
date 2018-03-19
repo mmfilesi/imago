@@ -10,6 +10,7 @@ export class SliderComponent implements OnInit, OnDestroy {
   private isActive = 0;
   private sliderLength = 0;
   private timerSlider: any;
+  private isPause = false;
 
   itemsSlider = [
     {
@@ -53,11 +54,20 @@ export class SliderComponent implements OnInit, OnDestroy {
     }, 5000);
   }
 
-  private setIsActive(): void {
+  public setIsActive(): void {
     if (this.isActive < this.sliderLength) {
       this.isActive++;
     } else {
       this.isActive = 0;
+    }
+  }
+
+  public setIsPause(state: boolean): void {
+    this.isPause = state;
+    if (this.isPause) {
+      clearInterval(this.timerSlider);
+    } else {
+      this.launchSliderTimer();
     }
   }
 }

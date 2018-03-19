@@ -6,12 +6,13 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
 import { ConfigService } from './config.service';
+
 import { ThumbnailSchema } from '../schemas/thumbnail-schema';
+import { AlbumSchema } from '../schemas/album-schema';
 
 @Injectable()
 export default class AlbumsService {
 
-  private albums: ThumbnailSchema[] = [];
   private restStatus: any = {
     albums: {
       loading: false,
@@ -35,41 +36,31 @@ export default class AlbumsService {
         return res.map(item => {
           return new ThumbnailSchema(
             item.id,
+            item.slug,
+            item.order,
             item.name,
             item.date,
             item.img,
-            item.shortDescription
+            item.description
           );
         });
+    });
+  }
+
+  getAlbum(albumSlug): Observable<AlbumSchema> {
+    const url = 'mocks/albumMock.json'; // coger de config
+
+    return this.http.get(url)
+      .map( res => {
+        return new AlbumSchema(
+          res.mainData,
+          res.galleries
+        );
+      });
     });
   }
 
   /*
-  getAlbum(idAlbum): Observable<ThumbnailSchema[]> {
-    const url     = 'mocks/albumMock.json'; // coger de config
-    let albumData = {};
-    // habría que hacer un schema de esto...
-    return this.http.get(url)
-      .map( res => {
-        albumData.mainData = res.title;
-        albumData.pages = res.pages;
-
-        albumData.list = res.list.map(item => {
-          return new ThumbnailSchema(
-            item.id,
-            item.name,
-            item.date,
-            item.img,
-            item.shortDescription
-          );
-        });
-        return albumData;
-    });
-  }
-  */
-
-
-
   private initAlbums(albumsData): void {
     const len: number = Array.isArray(albumsData) ? albumsData.length : 0;
     let i = 0;
@@ -84,5 +75,7 @@ export default class AlbumsService {
       ));
     }
   }
+  */
 
 }
+

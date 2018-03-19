@@ -1,0 +1,36 @@
+<div
+(click)="hideViewport()"
+  class="viewport-container">
+
+  <div class="viewport-subcontainer">
+    <!-- header -->
+    <div class="viewport-header">
+      <div class="viewport-galleryName">
+        {{viewport.galleryName}}
+      </div>
+      <div class="viewport-close">
+        <span class="icon-times-circle"></span>
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="viewport-layout">
+      <div class="viewport-col-secundary arrow margin-left"  (click)="showPrevImg($event)">
+        <span class="icon-caret-left"></span>
+      </div>
+      <div class="viewport-col-main">
+        <figure role="group" class="align-center">
+          <img [src]="viewport.imagePath" (click)="showNextImg($event)" class="viewport-img">
+          <figcaption *ngIf="viewport.imageName || viewport.imageDescription" class="viewport-legend">
+            <h6 *ngIf="viewport.imageName">{{viewport.imageName}}.</h6>
+            {{viewport.imageDescription}}
+          </figcaption>
+        </figure>
+      </div>
+      <div class="viewport-col-secundary arrow align-right margin-right" (click)="showNextImg($event)">
+        <span class="icon-caret-right"></span>
+      </div>
+    </div>
+
+  </div>
+</div>

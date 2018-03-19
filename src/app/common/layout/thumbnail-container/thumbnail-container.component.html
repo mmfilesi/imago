@@ -1,0 +1,8 @@
+<div class="thumbnail-container">
+  <app-thumbnail
+  *ngFor="let item of list; let i = index; trackBy: trackByItemId"
+  (click)="onClickThumbnail(item)"
+  [thumbnail]="item"
+  class="thumbnail-item"
+  ></app-thumbnail>
+</div>

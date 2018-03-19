@@ -1,5 +1,8 @@
 <article class="slider">
   <div class="slider-container elevation-01">
+
+    <span class="icon-play-circle-o control-button" *ngIf="isPause" (click)="setIsPause(false)"></span>
+    <span class="icon-playback-pause control-button" *ngIf="!isPause" (click)="setIsPause(true)"></span>
     <div
       *ngFor="let item of itemsSlider; let i = index; trackBy: idImage"
       class="slider-item img-background"

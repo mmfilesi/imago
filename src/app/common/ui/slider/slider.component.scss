@@ -1,4 +1,16 @@
+@import '~assets/scss/common/_media-queries';
+
 .slider {
+
+  .control-button {
+    position: absolute;
+    z-index: 1;
+    right: 1em;
+    cursor: pointer;
+    top: 1em;
+    color: #fff;
+    font-size: 1.5em;
+  }
 
   .slider-container {
     align-items: stretch;
@@ -71,4 +83,34 @@
   }
 }
 
-// https://codepen.io/rendro/pen/ajhrn
+
+
+.main-footer {
+  padding: 1em;
+  font-size: 0.9em;
+  text-align: center;
+  border-radius: 10px;
+
+  margin-top:1em;
+  margin-bottom:1em;
+
+  .content {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5em;
+    color: #666;
+  }
+}
+
+@include for-phone-only {
+  .slider {
+
+    .slider-container {
+      height: 150px;
+
+      .slider-item {
+        height: 150px;
+      }
+    }
+  }
+}

@@ -29,16 +29,19 @@ import { MainSidebarComponent } from './common/main-sidebar/main-sidebar.compone
 
 /* views */
 import { ViewHomeComponent } from './home/view-home.component';
+
 import { ViewAlbumComponent } from './album/view-album.component';
+import { ViewportComponent } from './album/viewport/viewport.component';
 
 /* components */
 import { ThumbnailComponent } from './common/layout/thumbnail/thumbnail.component';
+import { ThumbnailContainerComponent } from './common/layout/thumbnail-container/thumbnail-container.component';
 import { SliderComponent } from './common/ui/slider/slider.component';
 
 /* Routes */
 const appRoutes: Routes = [
   { path: 'home', component: ViewHomeComponent },
-  { path: 'album/:idAlbum', component: ViewAlbumComponent },
+  { path: 'album/:albumSlug', component: ViewAlbumComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
@@ -51,6 +54,8 @@ const appRoutes: Routes = [
     MainSidebarComponent,
     ViewHomeComponent,
     ViewAlbumComponent,
+    ViewportComponent,
+    ThumbnailContainerComponent,
     ThumbnailComponent,
     SliderComponent
   ],

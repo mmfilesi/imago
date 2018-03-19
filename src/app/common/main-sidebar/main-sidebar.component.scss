@@ -1,0 +1,23 @@
+.box-sidebar {
+  padding: 0.4em;
+  margin: 0;
+  margin-bottom: 2em;
+  border-radius: 5px;
+
+  .title {
+    color: #444;
+    font-size: 1em;
+    height: 1.6em;
+    line-height: 140%;
+    font-weight: bold;
+    border-bottom: 1px dotted #444;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .content {
+    color: #737373;
+    font-size: 1em;
+    line-height: 160%;
+  }
+}

@@ -1,50 +1,108 @@
 {
   "mainData": {
-    "title": "Lore ipsum"
+    "name": "Lore ipsum",
+    "date": "01-06-2017",
+    "description": "Lamentamos que tu paquete vaya con retraso. Si no lo has recibido antes del martes, 6 de marzo, vuelve a esta página para ver las opciones disponibles.",
+    "img": "./assets/images/image-01.jpg"
   },
-  "pages": [],
-  "list": [
+  "galleries": [
     {
-      "id": "1",
-      "name": "Países Bálticos",
-      "date": "06-2017",
-      "img": "./assets/images/image-01.jpg",
-      "description": "Lore Ipsum"
+      "id": "03",
+      "name": "Asd asd sadd",
+      "description": "Lamentamos que tu paquete vaya con retraso. Si no lo has recibido antes del martes, 6 de marzo, vuelve a esta página para ver las opciones disponibles.",
+      "list": [
+        {
+          "id": "1",
+          "name": "gal1-Países Bálticos",
+          "date": "06-2017",
+          "img": "./assets/images/image-01.jpg",
+          "description": "Lore Ipsum"
+        },
+        {
+          "id": "2",
+          "name": "gal1-Galicia",
+          "date": "06-2016",
+          "img": "./assets/images/image-02.jpg",
+          "description": "Lore Ipsum"
+        },
+        {
+          "id": "3",
+          "name": "gal1-New York",
+          "date": "06-2016",
+          "img": "./assets/images/image-03.jpg",
+          "description": "Lore Ipsum"
+        },
+        {
+          "id": "4",
+          "name": "gal1-Países Bálticos",
+          "date": "06-2017",
+          "img": "./assets/images/image-01.jpg",
+          "description": "Lore Ipsum"
+        },
+        {
+          "id": "5",
+          "name": "gal1-Galicia",
+          "date": "06-2016",
+          "img": "./assets/images/image-02.jpg",
+          "description": "Lore Ipsum"
+        },
+        {
+          "id": "6",
+          "name": "gal1-end-New York",
+          "date": "06-2016",
+          "img": "./assets/images/image-03.jpg",
+          "description": "Lore Ipsum"
+        }
+      ]
     },
     {
-      "id": "2",
-      "name": "Galicia",
-      "date": "06-2016",
-      "img": "./assets/images/image-02.jpg",
-      "description": "Lore Ipsum"
-    },
-    {
-      "id": "3",
-      "name": "New York",
-      "date": "06-2016",
-      "img": "./assets/images/image-03.jpg",
-      "description": "Lore Ipsum"
-    },
-    {
-      "id": "4",
-      "name": "Países Bálticos",
-      "date": "06-2017",
-      "img": "./assets/images/image-01.jpg",
-      "description": "Lore Ipsum"
-    },
-    {
-      "id": "5",
-      "name": "Galicia",
-      "date": "06-2016",
-      "img": "./assets/images/image-02.jpg",
-      "description": "Lore Ipsum"
-    },
-    {
-      "id": "6",
-      "name": "New York",
-      "date": "06-2016",
-      "img": "./assets/images/image-03.jpg",
-      "description": "Lore Ipsum"
+      "id": "04",
+      "name": "Otra página",
+      "description": "Gases nobles o gases inertes son un grupo de elementos químicos con propiedades muy similares: bajo condiciones normales, son gases monoatómicos inodoros, incoloros y presentan una reactividad química muy baja.",
+      "list": [
+        {
+          "id": "7",
+          "name": "Países Bálticos",
+          "date": "06-2017",
+          "img": "./assets/images/image-01.jpg",
+          "description": "Lore Ipsum"
+        },
+        {
+          "id": "8",
+          "name": "Galicia",
+          "date": "06-2016",
+          "img": "./assets/images/image-02.jpg",
+          "description": "Lore Ipsum"
+        },
+        {
+          "id": "9",
+          "name": "New York",
+          "date": "06-2016",
+          "img": "./assets/images/image-03.jpg",
+          "description": "Lore Ipsum"
+        },
+        {
+          "id": "14",
+          "name": "Países Bálticos",
+          "date": "06-2017",
+          "img": "./assets/images/image-01.jpg",
+          "description": "Lore Ipsum"
+        },
+        {
+          "id": "15",
+          "name": "Galicia",
+          "date": "06-2016",
+          "img": "./assets/images/image-02.jpg",
+          "description": "Lore Ipsum"
+        },
+        {
+          "id": "16",
+          "name": "New York",
+          "date": "06-2016",
+          "img": "./assets/images/image-03.jpg",
+          "description": "Lore Ipsum"
+        }
+      ]
     }
   ]
 }

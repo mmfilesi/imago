@@ -1,27 +1,56 @@
-.appContainer {
-  /*
-  border-left: 1px solid #ededed;
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid rgb(231, 230, 230);
-  border-right: 1px solid rgb(231, 230, 230);
-  */
-  box-sizing: border-box;
-  border-radius: 10px;
-  max-width: 1024px;
-  margin: 0 auto;
-  margin-top: 1em;
-  font-family: $main-font;
-}
+@import '~assets/scss/common/_media-queries';
 
 .layout-container {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .layout-views {
-  width: 69%;
+  width: 66%;
 }
 
 .layout-sidebar {
   width: 29%;
+}
+
+@include for-phone-only {
+  .layout-container {
+    flex-wrap: wrap;
+  }
+
+  .layout-views {
+    width: 100%;
+  }
+
+  .layout-sidebar {
+    margin-top: 1em;
+    width: 100%;
+  }
+}
+
+.align-left {
+  text-align: left ;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.hideScroll {
+  overflow: hidden;
 }

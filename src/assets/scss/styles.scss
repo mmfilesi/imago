@@ -1,6 +1,11 @@
+@import './common/_media-queries';
+
+// ref
 @import './settings/_var';
 @import './settings/_normalize';
+
 @import './fonts/_fonts';
+@import './fonts/_icons';
 @import './settings/_colors';
 @import './common/_shadows';
 @import './common/_layout';

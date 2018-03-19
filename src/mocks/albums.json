@@ -1,44 +1,56 @@
 [
   {
     "id": "1",
+    "slug": "balticos",
     "name": "Países Bálticos",
     "date": "06-2017",
     "img": "./assets/images/image-01.jpg",
-    "description": "Lore Ipsum"
+    "description": "Lore Ipsum",
+    "order": 0
   },
   {
     "id": "2",
+    "slug": "galicia",
     "name": "Galicia",
     "date": "06-2016",
     "img": "./assets/images/image-02.jpg",
-    "description": "Lore Ipsum"
+    "description": "Lore Ipsum",
+    "order": 1
   },
   {
     "id": "3",
     "name": "New York",
+    "slug": "new-york",
     "date": "06-2016",
     "img": "./assets/images/image-03.jpg",
-    "description": "Lore Ipsum"
+    "description": "Lore Ipsum",
+    "order": 2
   },
   {
     "id": "4",
+    "slug": "new-york",
     "name": "Países Bálticos",
     "date": "06-2017",
     "img": "./assets/images/image-01.jpg",
-    "description": "Lore Ipsum"
+    "description": "Lore Ipsum",
+    "order": 3
   },
   {
     "id": "5",
+    "slug": "new-york",
     "name": "Galicia",
     "date": "06-2016",
     "img": "./assets/images/image-02.jpg",
-    "description": "Lore Ipsum"
+    "description": "Lore Ipsum",
+    "order": 4
   },
   {
     "id": "6",
+    "slug": "new-york",
     "name": "New York",
     "date": "06-2016",
     "img": "./assets/images/image-03.jpg",
-    "description": "Lore Ipsum"
+    "description": "Lore Ipsum",
+    "order": 5
   }
 ]

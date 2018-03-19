@@ -1,0 +1,28 @@
+@import '~assets/scss/common/_media-queries';
+
+.thumbnail-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.thumbnail-item {
+  width: 48%;
+}
+
+@include for-phone-only {
+  .albums-container {
+    flex-wrap: wrap;
+  }
+
+  .thumbnail-item {
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+}
+
+@include for-tablet-landscape-up {
+  .thumbnail-item {
+    width: 32%;
+  }
+}

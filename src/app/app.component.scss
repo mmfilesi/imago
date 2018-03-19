@@ -1,0 +1,8 @@
+@import '~assets/scss/common/_typography';
+
+.appContainer {
+  box-sizing: border-box;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: $main-font;
+}

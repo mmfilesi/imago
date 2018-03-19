@@ -1,3 +1,47 @@
-<p>
-  view-album works!
-</p>
+<article class="album-container">
+  <app-viewport
+    [galleries]="this.albumData.galleries"
+    [idItemActive]="thumbailActive.id"
+    (clickCloseViewport)="hideViewport()"
+    *ngIf="showViewport"
+    >
+  </app-viewport>
+
+  <div class="layout-container">
+    <div class="layout-views">
+      <div
+      class="img-background elevation-01 main-img"
+      [style.backgroundImage]="'url('+ albumData.mainData.img +')'"
+      >
+      <header class="title">
+          {{albumData.mainData.name}}
+      </header>
+      </div>
+      <p class="main-description">
+        {{albumData.mainData.description}}
+      </p>
+
+      <nav class="album-nav-container">
+        <span *ngFor="let gallery of albumData.galleries; let i = index; trackBy: trackByGalleryId"
+        (click)="setGallery(gallery.id)"
+        class="album-nav"
+        >
+          {{gallery.name}}
+        </span>
+      </nav>
+
+      <div *ngFor="let gallery of albumData.galleries; let i = index; trackBy: trackByGalleryId"
+      (click)="setGallery(gallery.id)"
+      [hidden]="gallery.id !== galleryActive">
+        <h5 class="gallery-title">{{gallery.name}}</h5>
+        <div class="gallery-description">{{gallery.description}}</div>
+        <app-thumbnail-container
+        [list]="gallery.list"
+        (clickThumbnail)="showImg($event)"
+        >
+        </app-thumbnail-container>
+      </div>
+    </div>
+    <app-main-sidebar class="layout-sidebar"></app-main-sidebar>
+  </div>
+</article>
